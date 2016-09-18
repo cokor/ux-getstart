@@ -1,0 +1,267 @@
+body {
+    margin: 0px;
+}
+
+.icon-featured {
+    width: 27px;
+    height: 27px;
+    background: url(img/icons.png) -339px -212px no-repeat;
+    display: block;
+}
+
+.icon-username {
+    width: 20px;
+    height: 24px;
+    background: url(img/icons.png) -155px -67px no-repeat;
+    display: block;
+}
+
+.logo-sz-md {
+    width: 28px;
+    height: 28px;
+    background: url(img/icons.png) -339px -152px no-repeat;
+    display: block;
+}
+
+.icon-catagory {
+    width: 24px;
+    height: 21px;
+    background: url(img/icons.png) -74px -296px no-repeat;
+    display: block;
+}
+
+.icon-messages {
+    width: 22px;
+    height: 24px;
+    background: url(img/icons.png) -267px -248px no-repeat;
+    display: block;
+}
+
+.icon-position {
+    width: 27px;
+    height: 13px;
+    background: url(img/iconss.png) -203px -242px no-repeat;
+    top: -13px;
+}
+
+.center {
+    display: -webkit-flex;
+    /* Safari */
+    -webkit-align-items: center;
+    /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+}
+
+.serach-box {
+    width: 100%;
+}
+
+.app-bar {
+    height: 40px;
+    padding: 12px 16px;
+    display: flex;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.header-left-content {
+    width: 100%;
+}
+
+button {
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.inputbox-wrapper {
+    height: 40px;
+    background-color: #efefef;
+    width: 100%;
+    border-radius: 4px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.inputbox-wrapper:before {
+    width: 20px;
+    height: 20px;
+    background: url(img/icons.png) -179px -322px no-repeat;
+    content: " ";
+    position: absolute;
+    z-index: 999999999;
+}
+
+.inputbox-wrapper input {
+    border: none;
+    line-height: 20px;
+    background-color: #efefef;
+    color: #a7a7a7;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.inputbox-wrapper input:focus {
+    outline: none;
+}
+
+.fixed-layout {
+    position: fixed;
+    z-index: 686;
+}
+
+.menu {
+    overflow-y: auto;
+    border-radius: 6px;
+    height: auto;
+    text-align: left;
+    width: 496px;
+    background-color: white;
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(187, 190, 199, 1);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(187, 190, 199, 1);
+    box-shadow: 1px 1px 3px 0px rgba(187, 190, 199, 1);
+    opacity: 1px;
+}
+
+.category-wrapper {
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 30px 24px 16px;
+}
+
+.column0 {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    width: 201px;
+}
+
+.column1 {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    width: 201px;
+}
+
+.column0 li {
+    list-style: none;
+    font-family: Helvetica Neue;
+    font-size: 12px;
+    font-weight: 600;
+    color: #838383;
+    margin: 2px;
+}
+
+.column1 li {
+    list-style: none;
+    font-family: Helvetica Neue;
+    font-size: 12px;
+    font-weight: 600;
+    color: #838383;
+    margin: 2px;
+}
+
+.about {
+    border-top: 1px solid #ebebeb;
+    display: block;
+    padding: 5px 5px;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.normalfont {
+    font-size: 12px;
+    font-family: Helvetica Neue;
+    font-weight: normal;
+    color: #949494;
+}
+
+.link {
+    padding: 5px 28px;
+    margin: 0px;
+    display: flex;
+}
+
+.link li {
+    display: inline-flex;
+    text-align: -webkit-match-parent;
+    list-style: normal;
+    padding: 0px 3px;
+}
+
+.link li:after {
+    content: ".";
+    position: relative;
+    right: -5px;
+    top: -5px;
+    padding: 3px;
+}
+
+.positioncaret {
+    left: 359.5px;
+    position: absolute;
+    z-index: 687;
+}
+
+.grid-module {
+    display: block;
+    padding-bottom: 22.5px;
+    margin: 14px;
+    position: relative;
+}
+
+.pinHolder-wrapper {
+    height: auto;
+    width: auto;
+    margin: 14px;
+    padding-bottom: 4px;
+}
+
+.item-ui {
+    margin: 0;
+    padding: 24px 12px;
+    width: 236px;
+    display: flex;
+}
+
+.pinHolder {
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    display: block;
+}
+
+.image {
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    z-index: 200;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+
+@keyframes floatin {
+    from {
+        top: 30px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+.animation {
+    top: 0px;
+    animation-name: floatin;
+    animation-duration: 0.5s;
+}

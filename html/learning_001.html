@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ice breaker</title>
+    <style>
+        .row:before {
+            display: table;
+            content: " ";
+        }
+        
+        .row:after {
+            clear: both;
+            display: table;
+            content: " ";
+        }
+        
+        img.left-icon-img {
+            max-height: 100px;
+            float: left;
+        }
+    </style>
+    <script>
+            function ready () {
+                var movingBlock = document.getElementById('moving-block');
+                movingBlock.style.left = '0px';
+                movingBlock.style.top = '0px';
+
+                var i = 0;
+
+                setInterval(function () { 
+                    movingBlock.style.left = i * 5 + 'px';
+                    movingBlock.style.top = i * 5 + 'px';
+                    i = i + 1;
+                }, 1000);
+            };
+
+            document.addEventListener("DOMContentLoaded", function(event) { 
+                ready();
+            });
+        </script>
+</head>
+
+<body>
+    <div class="row">
+        <div style="background-color:black;width:25%;height:100px;float:left">
+            <img src="https://s-media-cache-ak0.pinimg.com/474x/97/35/2f/97352fca1afd86ff2726ef5d52eb052a.jpg" class="left-icon-img">
+            <h1 style="color:white;text-align:center">1</h1>
+        </div>
+        <div style="background-color:pink;width:25%;height:100px;float:left">
+            <img src="https://s-media-cache-ak0.pinimg.com/474x/97/35/2f/97352fca1afd86ff2726ef5d52eb052a.jpg" class="left-icon-img">
+            <h1 style="color:white;text-align:center">2</h1>
+        </div>
+        <div style="background-color:grey;width:25%;height:100px;float:left">
+            <img src="https://s-media-cache-ak0.pinimg.com/474x/97/35/2f/97352fca1afd86ff2726ef5d52eb052a.jpg" class="left-icon-img">
+            <h1 style="color:white;text-align:center">3</h1>
+        </div>
+        <div style="background-color:purple;width:25%;height:100px;float:left">
+            <img src="https://s-media-cache-ak0.pinimg.com/474x/97/35/2f/97352fca1afd86ff2726ef5d52eb052a.jpg" class="left-icon-img">
+            <h1 style="color:white;text-align:center">4</h1>
+        </div>
+    </div>
+    <div>
+        <div id="moving-block" style="background-color:black;width:250px;height:100px;position:absolute;">
+            <div class="row">
+                <img src="https://s-media-cache-ak0.pinimg.com/474x/97/35/2f/97352fca1afd86ff2726ef5d52eb052a.jpg" class="left-icon-img">
+                <h1 style="color:white;text-align:center">1</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
